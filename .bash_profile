@@ -1,7 +1,9 @@
 # .bash_profile
 
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
+if [ -f ~/.profile ]; then
+	. ~/.profile
+elif [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
