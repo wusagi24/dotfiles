@@ -8,11 +8,11 @@ if has('vim_starting')
 endif
 call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
 		  
 " インストールする NeoBundle プラグイン
 NeoBundle 'tomasr/molokai'
 
+call neobundle#end()
 filetype plugin indent on
 
 
