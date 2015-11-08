@@ -4,6 +4,11 @@ set nocompatible
 filetype off
  
 if has('vim_starting')
+	" NeoBundle が入っていない場合自動インストール
+	if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
+		echo "install NeoBundle"
+		:call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
+	endif
 	set rtp+=$HOME/.vim/bundle/neobundle.vim/
 endif
 call neobundle#begin(expand('~/.vim/bundle'))
