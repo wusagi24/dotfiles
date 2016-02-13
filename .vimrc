@@ -5,7 +5,7 @@ filetype off
  
 if has('vim_starting')
 	" NeoBundle が入っていない場合自動インストール
-	if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
+	if !isdirectory(expand('~/.vim/bundle/neobundle.vim/'))
 		echo "install NeoBundle"
 		:call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
 	endif
@@ -60,5 +60,5 @@ set scrolloff=8
 set ruler
 
 " ビープ音を鳴らさない
-set visualbell t_vb=
+set visualbell
 set noerrorbells
