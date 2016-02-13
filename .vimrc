@@ -58,7 +58,10 @@ set autoindent
 set scrolloff=8
 "
 set ruler
-
+" スワップファイルを生成しない
+set noswapfile
+" コマンドラインモードのtab補完有効化
+set wildmenu
 " ビープ音を鳴らさない
 set visualbell
 set noerrorbells
