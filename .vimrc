@@ -16,6 +16,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 		  
 " インストールする NeoBundle プラグイン
 NeoBundle 'tomasr/molokai'
+NeoBundle 'editorconfig/editorconfig-vim'
 
 call neobundle#end()
 filetype plugin indent on
